@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Untitled Document</title>
+<link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.min.css">
+<link rel="stylesheet" href="my web page Contact.css">
+</head>
+
+<body>
+<div class="page">
+    <div class="info">
+        <p style="padding-top:10px;padding-left:16px;font-size: 18px;font-family: Verdana, Geneva, Tahoma, sans-serif;"> Do you have any Project? Question? Suggestion? Inquiries?</p>
+        <P style="padding-left:16px;font-size: 18px;font-family: Verdana, Geneva, Tahoma, sans-serif;">Contact us via: </P>
+        <table>
+            <tr>
+                <td>WHATSAPP CALL: <input onfocus="foc()" id="myInput" type=text value="+2349030414128"> 
+                        <button onclick="copyText()" onmouseout="outFunc()" class="copy">Copy</button>
+                        <span class="toolTipText" id="myTooltip">Copy to clipboard</span>  
+                </td>
+            </tr>
+            <tr>
+                <td>DIRECT CALL: +2348127675493</td>
+            </tr>
+            <tr>
+                <td>E-MAIL: <input class="myInput" type=text value="Olaoluwathompson@gmail.com"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="contact">
+        <p style="padding-left:16px;font-size: 18px;font-family:Verdana, Geneva, Tahoma, sans-serif">Or contact us on social media</p>
+        
+        <div class="fb">
+            <i class="fab fa-facebook-square"></i>
+            <span><a href="https://facebook.com/olaoluwa.thompson.1"> FACEBOOK </a></span>
+        </div><br>
+
+        <div class="wsapp" onclick="location.href='www.whatsapp.com/dl/'">
+            <i class="fab fa-whatsapp"></i>
+            <span><a href="https://whatsapp.com">WHATSAPP</a></span>
+        </div><br>
+
+        <div class="twi">
+            <i class="fab fa-twitter"></i>
+            <span><a href="https://twitter.com/BeanBost?s=09">TWITTER</a></span>
+        </div><br>
+
+        <div class="lnk">
+            <i style="color:#3B5998" class="fab fa-linkedin"></i>
+            <span><a style="color:#3B5998" href="https://linkedln.com/in/olaoluwa-boluwaji-8065b1234">LINKEDIN</a></span>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+   let input = document.getElementById("myInput");
+   let clipText = document.getElementById("myTooltip")
+
+   function foc(){
+       input.style.border="none";
+   }
+
+    function copyText(){
+        input.select();
+        input.setSelectionRange(0, 99999);
+
+        navigator.clipboard.writeText(input.value)
+        myTooltip.innerHTML ="copied: " + input.value;
+    }
+
+    function outFunc(){
+        document.getElementById("myTooltip").innerHTML="Copy to clipboard"
+    }
+</script>
+</html> 

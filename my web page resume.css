@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("images/Tech5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+.about{
+    text-align: justify;
+}
+.cont{
+    background-color: lightgray;
+    border-radius: 15px;
+    width: 60%;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skill{
+    background-color: rgb(116, 194, 92);
+    color:white;
+    font-size: 14px;
+    border-radius: 15px;
+    margin-top: -14px;
+    display: flex;
+    align-items: center;
+    
+}
+.title{
+    text-align: center;
+}
+.html, .css, .corel{
+    height: 20px;
+}
+.js{
+    width:90%;
+    height: 20px;
+}
+.react{
+    width: 80%;
+    height: 20px;
+}
+.python{
+    width:90%;
+    height: 20px;
+}
+.sql{
+    width: 95%;
+    height: 20px;
+}
+.php{
+    width: 70%;
+    height: 20px;
+}
+.ps{
+    width: 80%;
+    height: 20px;
+}
+.Ai{
+    width:90%;
+    height: 20px;
+}
+h4{
+    opacity: 0.6;
+    margin-top: -14px;
+}
+.section1 >img{
+    border-radius: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+i{
+    color: rgb(248, 47, 11);
+}
+.main{
+    margin-left: 20px;
+}
+.sectionA > h2, .sectionB  h2, .interest > h2{
+    color: rgb(248, 47, 11);
+}
+hr{
+    margin-top: -14px;
+}
+.section2-content{
+    background-color: rgb(248, 47, 11);
+    color: white;
+    border-radius: 10px;
+}
+
+.section2-content > p{
+    text-justify: auto;
+}
+@media screen and (max-width:500px) {
+    .section1, .section2{
+        width:100%;
+    }
+}
+@media screen and (min-width:501px) {
+    .container1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .section2-content{
+        width: auto;
+        height:600px;
+        font-size: 20px;
+        padding:30px;
+    }
+    .section1{
+        width:600px;
+        margin-top: 20px;
+    }
+
+    .section2{
+        margin-right: 20px;
+        width: 50%;
+    }
+    .container2{
+        display:flex;
+        justify-content: space-around;
+    }
+    .sectionA{
+        width:600px;
+    }
+    .sectionB{
+        width:600px;
+    }
+}
